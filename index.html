@@ -172,7 +172,7 @@ src="https://www.facebook.com/tr?id=175584471220260&amp;ev=PageView&amp;noscript
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elCountdown elAlign_center elMargin0 ui-droppable de-editable" id="tmp_countdown-63596-108" data-de-type="countdown" data-de-editing="false" data-title="Date Countdown 2.0" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" data-show-weeks="false" data-show-months="false" data-show-years="false" style="margin-top: 30px; outline: none; cursor: pointer;" data-element-theme="customized" aria-disabled="false" data-expire-type="url">
 <span class="countdown-row countdown-show3">
-<span class="countdown-section">
+<span class="countdown-section" >
   <div class="countdown-row countdown-show3">
     <span class="countdown-section">
         <span class="countdown-amount" data-period="Hours">00</span>
@@ -189,7 +189,6 @@ src="https://www.facebook.com/tr?id=175584471220260&amp;ev=PageView&amp;noscript
 </div>
 </span>
 </span>
-
 </div>
 </div>
 </div>
@@ -628,7 +627,13 @@ src="https://www.facebook.com/tr?id=175584471220260&amp;ev=PageView&amp;noscript
     align-items: center; /* 这会垂直居中所有的子元素 */
 }
 
-  
+
+.countdown-row {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex-direction: row; /* 确保元素是水平排列的 */
+}
   .countdown-section {
     display: flex;
     flex-direction: column;
